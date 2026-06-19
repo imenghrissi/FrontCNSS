@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
     <section class="cnss-panel">
       <div class="cnss-panel__title">Attestation du solde</div>
       <div class="placeholder">
-        <p>Consultation et téléchargement de l'attestation du solde de cotisations.</p>
+        <p>Consultation de l'attestation du solde </p>
       </div>
     </section>
   `,
