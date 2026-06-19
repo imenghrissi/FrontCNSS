@@ -97,5 +97,7 @@ export class Sidebar {
     { label: 'Déclaration', path: '/declaration', icon: '📄' },
     { label: 'Attestation du solde', path: '/attestation', icon: '🧾' },
     { label: 'Comptes bancaires', path: '/comptes-bancaires', icon: '🏦' },
+    { label: 'test', path: '/test', icon: '🏦' },
+
   ];
 }
