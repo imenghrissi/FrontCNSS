@@ -1,0 +1,144 @@
+:root {
+  --cnss-bordeaux: #8a1538;
+  --cnss-bordeaux-dark: #6e1029;
+  --cnss-bordeaux-light: #a83b56;
+  --cnss-bg: #f4f5f7;
+  --cnss-row-alt: #eef1f8;
+  --cnss-text: #2c2c2c;
+  --cnss-muted: #6b7280;
+  --cnss-border: #d9dde3;
+  --cnss-blue: #1a4f8b;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;
+  background: var(--cnss-bg);
+  color: var(--cnss-text);
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+/* ===== Generic CNSS table ===== */
+.cnss-panel {
+  background: #fff;
+  border: 1px solid var(--cnss-border);
+  border-radius: 6px;
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.cnss-panel__title {
+  background: var(--cnss-bordeaux);
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.7rem 1rem;
+  letter-spacing: 0.3px;
+}
+
+.cnss-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cnss-table th {
+  background: #f0eef0;
+  color: var(--cnss-bordeaux);
+  font-weight: 700;
+  text-align: left;
+  padding: 0.65rem 0.9rem;
+  border-bottom: 2px solid var(--cnss-border);
+  white-space: nowrap;
+}
+
+.cnss-table.center th,
+.cnss-table.center td {
+  text-align: center;
+}
+
+.cnss-table td {
+  padding: 0.65rem 0.9rem;
+  border-bottom: 1px solid var(--cnss-border);
+}
+
+.cnss-table tr:nth-child(even) td {
+  background: var(--cnss-row-alt);
+}
+
+/* key/value identity table */
+.kv-table td {
+  padding: 0.55rem 0.9rem;
+  border-bottom: 1px solid var(--cnss-border);
+}
+
+.kv-table .kv-key {
+  background: #e9eaee;
+  color: var(--cnss-blue);
+  font-weight: 700;
+  width: 170px;
+}
+
+/* action buttons */
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin: 0 2px;
+  border: none;
+  border-radius: 5px;
+  background: var(--cnss-bordeaux);
+  color: #fff;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background 0.15s;
+}
+
+.action-btn:hover {
+  background: var(--cnss-bordeaux-dark);
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.badge--saisie {
+  background: #fff3cd;
+  color: #8a6d3b;
+}
+
+.page-title {
+  font-size: 1.3rem;
+  color: var(--cnss-bordeaux);
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid var(--cnss-border);
+}
