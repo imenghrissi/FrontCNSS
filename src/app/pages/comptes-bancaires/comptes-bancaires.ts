@@ -8,7 +8,6 @@ import { Component } from '@angular/core';
     <section class="cnss-panel">
       <div class="cnss-panel__title">Comptes bancaires</div>
       <div class="placeholder">
-        <p>Gestion des comptes bancaires (RIB) utilisés pour le paiement des cotisations.</p>
       </div>
     </section>
   `,
